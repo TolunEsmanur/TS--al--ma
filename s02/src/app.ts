@@ -63,11 +63,25 @@
 // }
 
 
-//**TYPE ASSERTIONS */
-let str: unknown = "I'm a string"
-console.log(str.length) //compile error
-console.log((<string>str).length)
-console.log((str as string).length)
+//**TYPE ASSERTIONS**/
+// let str: unknown = "I'm a string"
+// console.log(str.length) //compile error
+// console.log((<string>str).length)
+// console.log((str as string).length)
 
-let score: unknown = 350
-console.log(score as number*2);
+// let score: unknown = 350
+// console.log(score as number*2);
+
+//**FUNCTIONS**//
+function selamla (mesaj:string, isim:string="User") :string{
+//   if(!isim) isim = " User"
+    return mesaj + " " + isim
+}
+
+selamla("merhaba", "dünya")
+selamla("merhaba")
+selamla("merhaba", 2024)
+console.log(selamla("merhaba"));
+selamla("merhaba", "dünya", 2024)
+
+

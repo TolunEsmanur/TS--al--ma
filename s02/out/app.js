@@ -49,10 +49,20 @@
 //     author_name: "Tolkien",
 //     book_name: "Retırn of the King"
 // }
-//**TYPE ASSERTIONS */
-let str = "I'm a string";
-console.log(str.length); //compile error
-console.log(str.length);
-console.log(str.length);
-let score = 350;
-console.log(score * 2);
+//**TYPE ASSERTIONS**/
+// let str: unknown = "I'm a string"
+// console.log(str.length) //compile error
+// console.log((<string>str).length)
+// console.log((str as string).length)
+// let score: unknown = 350
+// console.log(score as number*2);
+//**FUNCTIONS**//
+function selamla(mesaj, isim = "User") {
+    //   if(!isim) isim = " User"
+    return mesaj + " " + isim;
+}
+selamla("merhaba", "dünya");
+selamla("merhaba");
+selamla("merhaba", 2024);
+console.log(selamla("merhaba"));
+selamla("merhaba", "dünya", 2024);
