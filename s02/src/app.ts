@@ -73,15 +73,22 @@
 // console.log(score as number*2);
 
 //**FUNCTIONS**//
-function selamla (mesaj:string, isim:string="User") :string{
-//   if(!isim) isim = " User"
-    return mesaj + " " + isim
-}
+// function selamla (mesaj:string, isim:string="User") :string{
+// //   if(!isim) isim = " User"
+//     return mesaj + " " + isim
+// }
 
-selamla("merhaba", "dünya")
-selamla("merhaba")
-selamla("merhaba", 2024)
-console.log(selamla("merhaba"));
-selamla("merhaba", "dünya", 2024)
+// selamla("merhaba", "dünya")
+// selamla("merhaba")
+// selamla("merhaba", 2024)
+// console.log(selamla("merhaba"));
+// selamla("merhaba", "dünya", 2024)
+
+//**FUNCTION OVERLOADING**//
+function add (a:string, b:string):string
+function add (a:string, b:number):string
+function add (a:any, b:any):any{
+    return a + b
+}
 
 
