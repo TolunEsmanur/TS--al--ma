@@ -93,14 +93,34 @@
 
 
 //**REST PARAMETERS**//
-function add(num:number, ...numbers:number[]):void{
-    let total=num;
+// function add(num:number, ...numbers:number[]):void{
+//     let total=num;
 
-    numbers.forEach(number=>total+=number)
-    console.log(total);
+//     numbers.forEach(number=>total+=number)
+//     console.log(total);
+// }
+
+// add(1)
+// add(1,2)
+// add(1,5,10)
+// add(1,30,50,100)
+
+//**INTERFACE**//
+interface Color {
+    color: { r: number, g:number, b:number}
 }
 
-add(1)
-add(1,2)
-add(1,5,10)
-add(1,30,50,100)
+const red:Color = { color:{r:255, g:0, b:0}}
+
+interface Shape {
+    area: number
+}
+
+class Square implements Color, Shape {
+    constructor(public color:{r:number, g:number, b:number}, public area:number){
+
+    }
+}
+
+const sq1 = new Square({r:255, g:0, b:0}, 255)
+console.log(sq1);
