@@ -106,21 +106,23 @@
 // add(1,30,50,100)
 
 //**INTERFACE**//
-interface Color {
-    color: { r: number, g:number, b:number}
-}
+// interface Color {
+//     color: { r: number, g:number, b:number}
+// }
 
-const red:Color = { color:{r:255, g:0, b:0}}
+// const red:Color = { color:{r:255, g:0, b:0}}
 
-interface Shape {
-    area: number
-}
+// interface Shape {
+//     area: number
+// }
 
-class Square implements Color, Shape {
-    constructor(public color:{r:number, g:number, b:number}, public area:number){
+// class Square implements Color, Shape {
+//     constructor(public color:{r:number, g:number, b:number}, public area:number){
 
-    }
-}
+//     }
+// }
 
-const sq1 = new Square({r:255, g:0, b:0}, 255)
-console.log(sq1);
+// const sq1 = new Square({r:255, g:0, b:0}, 255)
+// console.log(sq1);
+
+
