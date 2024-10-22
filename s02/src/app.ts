@@ -85,10 +85,22 @@
 // selamla("merhaba", "dünya", 2024)
 
 //**FUNCTION OVERLOADING**//
-function add (a:string, b:string):string
-function add (a:string, b:number):string
-function add (a:any, b:any):any{
-    return a + b
+// function add (a:string, b:string):string
+// function add (a:string, b:number):string
+// function add (a:any, b:any):any{
+//     return a + b
+// }
+
+
+//**REST PARAMETERS**//
+function add(num:number, ...numbers:number[]):void{
+    let total=num;
+
+    numbers.forEach(number=>total+=number)
+    console.log(total);
 }
 
-
+add(1)
+add(1,2)
+add(1,5,10)
+add(1,30,50,100)
