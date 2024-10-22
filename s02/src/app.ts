@@ -30,3 +30,15 @@
 // let car2: Car = "Audi"
 // let car3: Car = "Fiat"
 // let car4: Car = 2024
+
+//OBJECT
+const car: {
+    type: string,
+    model: string,
+    readonly year: number
+} = {
+    type: "Honda",
+    model:  "CRV",
+    year: 2024
+}
+ car.year=2023 //compiler error
