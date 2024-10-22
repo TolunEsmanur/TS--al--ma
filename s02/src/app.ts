@@ -61,3 +61,13 @@
 //     author_name: "Tolkien",
 //     book_name: "Retırn of the King"
 // }
+
+
+//**TYPE ASSERTIONS */
+let str: unknown = "I'm a string"
+console.log(str.length) //compile error
+console.log((<string>str).length)
+console.log((str as string).length)
+
+let score: unknown = 350
+console.log(score as number*2);
