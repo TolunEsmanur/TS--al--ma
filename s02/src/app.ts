@@ -16,3 +16,17 @@
 //  }
 // }
 
+//**Type Aliases**/
+
+// type Esma = string | number
+// let c:Esma = "Selam"
+// c=2
+// c=true //compiler
+
+//**String Literals**//
+
+// type Car = "BMW" | "Audi" | "Mercedes" | 2024
+// let car1: Car = "BMW"
+// let car2: Car = "Audi"
+// let car3: Car = "Fiat"
+// let car4: Car = 2024
